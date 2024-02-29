@@ -1,0 +1,138 @@
+/* Overall styling */
+* {
+  background-color: #f7f6ed;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: normal;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Layout of visualizations */
+.top-row, .middle-row, .bottom-row {
+  display: flex;
+}
+
+.intro {
+  width: 750px;
+  padding: 0 20px;
+}
+
+.career-aspirations {
+  margin-bottom: 0;
+}
+
+.treemap-container {
+  padding-top: 1rem;
+}
+
+.chart-container {
+  margin: 0 auto;
+}
+
+.matrix-area {
+  fill: transparent;
+}
+
+/* Tree map */
+.tree-node:hover {
+  stroke: #000 !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Dot matrix */
+.dot:hover {
+  stroke: #000 !important;
+  stroke-width: 1.5px !important;
+}
+
+.dot.deselect {
+    filter: brightness(150%);
+}
+
+/* Bar line chart */
+.bar:hover {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.y-axis-left {
+  color: #669ac7;
+  font-weight: bolder;
+}
+
+.y-axis-right {
+  color: #008080;
+  font-weight: bolder;
+}
+
+.axis-title {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.axis-title-left {
+  fill: #669ac7;
+}
+
+.axis-title-right {
+  fill: #008080;
+  cursor: help;
+}
+
+/* Elements in charts */
+#dot-matrix-sorting {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+#tooltip {
+  position: absolute;
+  display: none;
+  background: #f7f6ed;
+  border: 1px solid #ddd;
+  padding: 8px;
+  min-width: 160px;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.tooltip-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#tooltip ul {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+}
+
+.legend {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}

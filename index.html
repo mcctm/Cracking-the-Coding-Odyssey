@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Coding Odyssey</title>
+  <meta charset="UTF-8">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="chart-container">
+    <div class="top-row">
+      <div class="intro">
+        <h1>👩🏻‍💻 Cracking the Coding Odyssey👨🏽‍💻</h1>
+        <p>
+          Hello World!👋
+          <br>
+          <br>
+          The emergence of technology has attracted more and more people into the world of coding.
+          It can feel intimidating at first, but you are not alone!
+          <br>
+          <br>
+          We are a group of UBC students that are interested in gaining insight into
+          how and why people are learning to code. As second degree computer science students ourselves, 
+          we aspire to navigate the intricate and diverse coding landscape by visually showing 
+          the journeys of approximately 2,000 individuals within the FreeCodeCamp community. 
+          <br>
+          <br>
+          Visualizations are created with data derived from FreeCodeCamp's 2021 New Coder Survey. Read more about the
+          original survey <a href="https://github.com/freeCodeCamp/2021-new-coder-survey">here</a>.
+          <br>
+          <br>
+          ⓘ The different motivations in the <b>Motivations</b> chart can be selected to further explore the dataset
+          and
+          see how specific subgroups of people began their coding journey!
+        </p>
+      </div>
+      <div class="treemap-container">
+        <h3><strong>🔥 Motivations: </strong>What were the main reasons for learning to code?</h3>
+        <p class="description"></p>
+        <div id="treemap-vis"></div>
+      </div>
+    </div>
+    <div class="middle-row">
+      <div class="bar-line-chart-container">
+        <h3 class="career-aspirations"><strong>💭 Aspirations: </strong> What were the participants' career and salary
+          goals?</h3>
+        <svg id="bar-line-chart"></svg>
+      </div>
+      <div class="dot-matrix-container">
+        <h3><strong>🌏 Demographics: </strong> What are the participants' backgrounds?</h3>
+        <circle cx="50" cy="50" r="30" fill="#FFD700" /> <!-- Head -->
+        <circle cx="38" cy="40" r="4" fill="black" /> <!-- Left Eye -->
+        <circle cx="62" cy="40" r="4" fill="black" /> <!-- Right Eye -->
+        <path d="M45 55 Q 50 70 55 55" stroke="black" stroke-width="2" fill="transparent" /> <!-- Smile -->
+        </svg>
+        <div id="dot-matrix-sorting">
+          <label>
+            <input type="radio" name="sort-option" value="location"> Location
+          </label>
+          <label>
+            <input type="radio" name="sort-option" value="gender" checked> Gender
+          </label>
+          <label>
+            <input type="radio" name="sort-option" value="age"> Age
+          </label>
+          <label>
+            <input type="radio" name="sort-option" value="university-study"> University Study
+          </label>
+        </div>
+        <div id="matrix">
+        </div>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="bubble-chart-container">
+        <h3><strong>📚 Resources: </strong>What learning resources did participants use?</h3>
+        <div id="bubble-chart"></div>
+      </div>
+      <div class="sankey-chart-container">
+        <h3><strong>💸 Cost of learning: </strong>How much did it cost to learn how to code?</h3>
+        <div id="sankey-chart"></div>
+      </div>
+    </div>
+
+    <div id="tooltip"></div>
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+    <!-- D3 sankey plugins -->
+    <script src="https://unpkg.com/d3-array@1"></script>
+    <script src="https://unpkg.com/d3-collection@1"></script>
+    <script src="https://unpkg.com/d3-path@1"></script>
+    <script src="https://unpkg.com/d3-shape@1"></script>
+    <script src="https://unpkg.com/d3-sankey@0"></script>
+
+    <!-- Our JS code -->
+    <script src="js/constants.js"></script>
+    <script src="js/dotMatrix.js"></script>
+    <script src="js/treeMap.js"></script>
+    <script src="js/bubbleChart.js"></script>
+    <script src="js/barLineChart.js"></script>
+    <script src="js/sankeyChart.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
