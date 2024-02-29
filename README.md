@@ -1,6 +1,7 @@
 # Cracking the Coding Odyssey :space_invader:
 
-A data visualization project to explore the 2021 FreeCodeCamp New Programmers Dataset. We visualize why and how people are learning to code, and what their aspirations are.
+Created by Miranda Chan, Tendy Su, Albert Chan and Justin Jao.
+A data visualization project to explore the 2021 FreeCodeCamp New Programmers Dataset. We visualize why and how people are learning to code, and what their aspirations are, primarily motivated by how we are second degree computer science students ourselves.
 
 ### External References
 
